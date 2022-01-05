@@ -7,8 +7,7 @@ public class HotelReservationTest {
     @Test
     public void givenHotelName_whenNameAndRate_shouldRerunRate() {
         HotelReservation hotelReservation=new HotelReservation();
-        hotelReservation.setRateForRegularCustomers("Lakewood",90);
-        Integer actualResult=Hotel.showRates("Lakewood");
+        Integer actualResult= Hotel.showRates("Lakewood");
         Integer expectedResult=90;
         Assert.assertEquals(actualResult,expectedResult);
     }
